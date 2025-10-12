@@ -1,0 +1,18 @@
+button{
+    margin: 50px;
+    display: inline-block;
+    background-color: blue;
+    color: rgb(60, 255, 0);
+    padding: 1em 2em;
+    transition: .3s;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(29, 97, 8);
+    transform: translate(10px);
+    cursor: pointer;
+}
+
+.mensaje{
+    display: none;
+}
