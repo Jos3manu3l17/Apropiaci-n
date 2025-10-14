@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apropiacion</title>
+    <title>Apropiacion del conocimiento</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,6 +15,40 @@
     </nav>
     <div class="mensaje" id="holamundo">
         <p>mensaje oculto</p>
+    </div>
+    <h2>Usando target para mostrar el mensaje oculto</h2>
+    <a href="#mensaje">has clic aqui para ver el mensaje</a>
+    <div id="mensaje">
+        <p>hola soy jose, este mensaje estaba oculto y se muestra gracuias a target</p>
+        <a href="#">cerrar el mensaje</a>
+    </div>
+
+    <h2 class>usando first-chil para darle estilo al primer elemento</h2>
+    <div class="contenedor">
+        <p>este es el primer parrafo por ende tendra el estilo principal</p>
+        <p>este es el segundo parrafo</p>
+        <p>este es el tercer parrafo</p>
+    </div>
+
+    <h3>Usando (invalid), (type="email") y (focus) en un solo formulario</h3>
+    <form>
+        <label for="correo">correoelectronico</label><br>
+        <input type="email" id="correo" name="correo" required placeholder="ejemplo: jose@gmail.com"><br><br>
+
+        <label for="edad">edad (minimo 18)</label><br>
+        <input type="number" id="edad" name="edad" min="18" required><br><br>
+
+        <button type="submit" class="boton">Enviar</button>
+    </form>
+    
+    <h2>utilizando only-of-type para estilizar elementos unicos</h2>
+    <div class="contenedor-only">
+        <p>este es un parrafo normal.</p>
+        <p>este es otro parrafo nprmal.</p>
+        <section>
+        <h3>encabezado unico dentro del section</h3>
+        <p>texto dentro del section</p>
+        </section>
     </div>
 </body>
 </html>

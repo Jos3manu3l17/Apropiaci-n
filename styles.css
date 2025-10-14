@@ -1,18 +1,123 @@
 button{
     margin: 50px;
     display: inline-block;
-    background-color: blue;
-    color: rgb(60, 255, 0);
-    padding: 1em 2em;
-    transition: .3s;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 20px 100px;
+    transition: .4s;
     border-radius: 20px;
 }
 button:hover{
-    background-color: rgb(29, 97, 8);
+    background-color: rgb(255, 0, 106);
     transform: translate(10px);
     cursor: pointer;
 }
 
 .mensaje{
     display: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #cff1db;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#mensaje{
+    display: none;
+    margin-top: 20px;
+    background-color: #cce5ff;
+    border: 1px solid #99ccff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#mensaje:target{
+    display: block;
+}
+
+.contenedor{
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: o 2px 8px rgba(0, 0, 0, 1);
+    padding: 20px;
+}
+
+.contenedor p{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+}
+
+.contenedor p:first-child{
+    background-color: #e0e597;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    border: 5px solid #32fc0a;
+}
+
+form{
+    background-color: white;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+input {
+    width: 80%;                             
+    padding: 8px;                           
+    margin-top: 8px;                        
+    border: 2px solid #ccc;                 
+    border-radius: 5px;                     
+    outline: none;                          
+}
+
+input[type="email"] {
+    background-color: #eef5ff;              
+    border-color: #007bff;                  
+}
+
+input:invalid{
+    border-color: #2ecc71;
+    background-color: #32fc0a;
+}
+
+.boton {
+    background-color: #ff0000;              
+    color: rgb(0, 0, 0);                           
+    border: none;                           
+    padding: 10px 20px;                     
+    border-radius: 10px;                     
+    cursor: pointer; 
+}   
+
+button:hover {
+    background-color: #00f7ff;              
+}
+
+input:focus {
+  border: 2px solid #00ffff;
+  outline: none; 
+  background-color: #fafafa; 
+  transition: 0.3s; 
+}
+
+section h3:only-of-type{
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px;
+    border-radius: 10px;
 }
