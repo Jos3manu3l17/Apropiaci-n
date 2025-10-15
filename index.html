@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apropiacion del conocimiento</title>
@@ -50,5 +51,61 @@
         <p>texto dentro del section</p>
         </section>
     </div>
+    <section class="seccion-first">
+        <h2>Aplica estilo solo al primer párrafo con<br>first-of-type</h2>
+        <p>este es el primer parrafo de la seccion debe tener un estilo especial</p>
+        <p>este es otreo parrafo sin estilo</p>
+        <p>y este tambien es otro parrafo sin estilo</p>
+    </section>
+
+    <section class="root-section">
+        <h2>Usando root para definir una variable de color</h2>
+        <p>este es un texto que usa un color definido con una bariable de css</p>
+        <button class="root-button">boton con el color de la variable</button>
+    </section>
+
+     <h2>navegación con etiquetas semánticas para que cambie su color al pasar sobre cada link.</h2>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">primer link de navegacion</a></li>
+            <li><a href="#">segundo link de navegacion</a></li>
+            <li><a href="#">tercer link de navegacion</a></li>
+            <li><a href="#">cuarto link de navegacion</a></li>
+        </ul>
+    </nav>
+    <h2>añadiendo un icono antes de cada título con before</h2>
+    <section class="iconos">
+        <h3><i>titulo numero 1</i></h3>
+        <h3><i>titulo nuemro 2</i></h3>
+        <h3><i>titulo numero 3</i></h3>
+        <h3><i>titulo numero 4</i></h3>
+    </section>
+
+    <section id="decoracion-parrafos">
+        <h2>Decoración con ::after</h2>
+        <p>El sol se ocultaba lentamente tras las montañas, pintando el cielo de naranja y violeta.</p>
+        <p>El viento soplaba con suavidad, moviendo las hojas como si danzaran al compas del atardecer.</p>
+        <p>Era el momento perfecto para detenerse, respirar y disfrutar del silencio del paisaje.</p>
+    </section>
+
+    <section id="boton-sombra">
+        <h2>agregando sombra a un boton con ::after</h2>
+        <button class="btn-sombra">haz clic aqui</button>
+    </section>
+
+    <section id="cita con comillas">
+        <h2>citas con comillas decorativas</h2>
+        <blockquote>
+            La tecnología avanza tan rápido que lo que hoy es innovación, mañana será historia.
+        </blockquote>
+    </section>
+
+    <section id="input-icono">
+        <h2>input con icono ussando ::before</h2>
+
+        <div class="campo-icono">
+            <input type="text" placeholder="buscar">
+        </div>
+    </section>
 </body>
 </html>
