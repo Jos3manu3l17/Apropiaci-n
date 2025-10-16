@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apropiacion del conocimiento</title>
@@ -9,7 +9,8 @@
 </head>
 <body>
     <div>
-        <button>enviar</button>
+        <h2>creando un botón que cambie de color<br>cuando esté en estado :hover</h2>
+        <button class="btn-cambio">enviar</button>
     </div>
     <nav>
         <a href="#holamundo">holamundo</a>
@@ -75,10 +76,10 @@
     </nav>
     <h2>añadiendo un icono antes de cada título con before</h2>
     <section class="iconos">
-        <h3><i>titulo numero 1</i></h3>
-        <h3><i>titulo nuemro 2</i></h3>
-        <h3><i>titulo numero 3</i></h3>
-        <h3><i>titulo numero 4</i></h3>
+        <h3><i class="bi bi-apple">titulo numero 1</i></h3>
+        <h3><i class="bi bi-apple">titulo nuemro 2</i></h3>
+        <h3><i class="bi bi-apple">titulo numero 3</i></h3>
+        <h3><i class="bi bi-apple">titulo numero 4</i></h3>
     </section>
 
     <section id="decoracion-parrafos">
@@ -103,9 +104,77 @@
     <section id="input-icono">
         <h2>input con icono ussando ::before</h2>
 
-        <div class="campo-icono">
-            <input type="text" placeholder="buscar">
-        </div>
+    <div class="campo-icono">
+        <input type="text" placeholder="buscar...">
+    </div>
     </section>
+
+    <h2>colocando la imagen de forma relative</h2>
+    <div class="contenedor-imajen">
+        <h2>Imagen con posición relative</h2>
+        <img src="imajen-sena.png" alt="hombre programando" class="imagen-relativa">
+        <p>Este texto no se mueve aunque la imagen cambie su posición.</p>
+    </div>
+
+    <h2>crea la tarjeta que contenga un botón de eliminar con absolute</h2>
+    <div class="tarjeta">
+        <h2>Tarjeta de ejemplo</h2> 
+        <p>targeta creada por jose</p> 
+        <button class="eliminar">X</button> 
+    </div>
+    <nav class="navbar">
+         <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">busqueda</a></li>
+            <li><a href="#">informacion</a></li> 
+            <li><a href="#">finalizar</a></li> 
+        </ul>
+    </nav>
+    <h2>aplicando las cajas</h2>
+    <div class="contenedor-cajas">
+        <div class="caja caja1">Caja 1</div> 
+        <div class="caja caja2">Caja 2</div> 
+    </div>
+    <h2>centrando card usando position y transform</h2>
+    <div class="contenedor-card">
+        <div class="card-abs">
+            <h3>Card centrada</h3>
+            <p>card centrada utilizando position y transform</p>
+        </div>
+    </div>
+    <h2>definido variable global</h2>
+    <div>
+        <div class="header">elemento primario</div>
+        <div class="card-card">otro elemento</div>
+        <button class="btn">Boton principal</button>
+    </div>
+    <h2>creando un tema oscuro cambiando variables en :root</h2>
+        <section class="punto22 dark-theme">
+            <div class="contenedor-tema">
+                <h2>Tema con variables</h2>
+                <p>Este texto cambia de color según el tema activo.</p>
+                <button class="boton-tema">Botón principal</button>
+            </div>
+
+            <button class="toggle-btn">boton pambiar a tema oscuro</button>
+        </section>
+        <h2>usando una variable con valor fallback si no existe otra definida</h2>
+        <section class="punto23">
+            <h2>Uso de variable con valor fallback</h2>
+            <p>este parrafo usa una variable que no esta definida, así que aplicara un color de respaldo</p>
+            <button class="btn-fallback">Botón con color fallback</button>
+        </section>
+        <h2>definiendo variables dentro de un scope</h2>
+        <section class="punto24">
+            <h2>Variables locales dentro de una card</h2>
+            <div class="card-local">
+                <h3>Título de la tarjeta</h3>
+                <p>Este texto y el fondo usan variables definidas solo dentro de esta card</p>
+                <button>Ver más</button>
+            </div>
+        </section>
+        <div>
+            <h1>Final</h1>
+        </div>
 </body>
 </html>
